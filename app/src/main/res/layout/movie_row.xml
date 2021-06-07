@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/cl_root_movieRow"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+tools:context=".MoviesListFragment">
+
+    <ImageView
+        android:id="@+id/imgView_movieImage_movieRow"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtView_movieName_movieRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imgView_movieImage_movieRow"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/movie_name" />
+
+    <TextView
+    android:id="@+id/txtView_movieReleaseYear_movieRow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="@+id/txtView_movieName_movieRow"
+    app:layout_constraintTop_toBottomOf="@+id/txtView_movieName_movieRow"
+    tools:text="@string/release_year" />
+
+    <TextView
+        android:id="@+id/txtView_movieNameValue_movieRow"
+        android:layout_width="169dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/txtView_movieName_movieRow"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/movie_name" />
+
+<TextView
+    android:id="@+id/txtView_movieReleaseYearValue_movieRow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="@string/release_year"
+    app:layout_constraintStart_toStartOf="@+id/txtView_movieNameValue_movieRow"
+    app:layout_constraintTop_toBottomOf="@+id/txtView_movieNameValue_movieRow" />
+</androidx.constraintlayout.widget.ConstraintLayout>
